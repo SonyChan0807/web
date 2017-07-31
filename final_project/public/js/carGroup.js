@@ -1,4 +1,4 @@
-var root_url = 'http://localhost:4200';
+var root_url = 'http://13.230.0.87:4200';
 var h = $(window).height();
 var gDict = {
     '小型代步車': 'g1',
@@ -109,10 +109,10 @@ function showFeatures(featureData){
     var nameArry = ['小型代步車', '平價家庭車', '高級家庭車','高速長程車', '綠色節能車', '奢華頂級車' ]
     for(var i=0; i<featureData.length; i++){
         var index = 0;
-        if(i === 3){
-            index = 4;
-        }else if(i === 4){
+        if(i === 2){
             index = 3;
+        }else if(i === 3){
+            index = 2;
         }else{
             index = i;
         }

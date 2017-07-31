@@ -234,12 +234,12 @@ exports.roseData = async (req, res) => {
     
     
     console.log(roseQuery);
-    const g1Promise = connection.query("select brand, model, years, tag_price, cc, max_hp, gasoline, fuel_consum from carGroup where carGroup=1 group by model, years order by count(*) desc limit 10;"); 
-    const g2Promise = connection.query("select brand, model, years, tag_price, cc, max_hp, gasoline, fuel_consum from carGroup where carGroup=2 group by model, years order by count(*) desc limit 10;"); 
-    const g3Promise = connection.query("select brand, model, years, tag_price, cc, max_hp, gasoline, fuel_consum from carGroup where carGroup=3 group by model, years order by count(*) desc limit 10;"); 
-    const g4Promise = connection.query("select brand, model, years, tag_price, cc, max_hp, gasoline, fuel_consum from carGroup where carGroup=4 group by model, years order by count(*) desc limit 10;"); 
-    const g5Promise = connection.query("select brand, model, years, tag_price, cc, max_hp, gasoline, fuel_consum from carGroup where carGroup=5 group by model, years order by count(*) desc limit 10;"); 
-    const g6Promise = connection.query("select brand, model, years, tag_price, cc, max_hp, gasoline, fuel_consum from carGroup where carGroup=6 group by model, years order by count(*) desc limit 10;"); 
+    const g1Promise = connection.query("select brand, model, years, tag_price, cc, max_hp, gasoline, fuel_consum from carGroup where carGroup=1 group by model, years, type order by count(*) desc limit 10;"); 
+    const g2Promise = connection.query("select brand, model, years, tag_price, cc, max_hp, gasoline, fuel_consum from carGroup where carGroup=2 group by model, years, type order by count(*) desc limit 10;"); 
+    const g3Promise = connection.query("select brand, model, years, tag_price, cc, max_hp, gasoline, fuel_consum from carGroup where carGroup=3 group by model, years, type order by count(*) desc limit 10;"); 
+    const g4Promise = connection.query("select brand, model, years, tag_price, cc, max_hp, gasoline, fuel_consum from carGroup where carGroup=4 group by model, years, type order by count(*) desc limit 10;"); 
+    const g5Promise = connection.query("select brand, model, years, tag_price, cc, max_hp, gasoline, fuel_consum from carGroup where carGroup=5 group by model, years, type order by count(*) desc limit 10;"); 
+    const g6Promise = connection.query("select brand, model, years, tag_price, cc, max_hp, gasoline, fuel_consum from carGroup where carGroup=6 group by model, years, type order by count(*) desc limit 10;"); 
 
 
     const [g1Query, g2Query, g3Query, g4Query, g5Query, g6Query] = await Promise.all([g1Promise, g2Promise, g3Promise, g4Promise, g5Promise, g6Promise]);

@@ -12,6 +12,6 @@ finaldata<-data.frame(years=c(anadata[1]),model=c(anadata[3]),mileage=c(anadata[
 
 #依品牌放位置 c(anadata[2])
 #Type因類別太多 無法判斷
-modelTree = readRDS(paste0('/Users/sonychan/Desktop/web/final_project/Rmodel/',c(anadata[2]) ), refhook = FALSE)
+modelTree = readRDS(paste0('/home/ec2-user/web/final_project/Rmodel/',c(anadata[2]) ), refhook = FALSE)
 mtPred <- predict(modelTree, finaldata)
 print (mtPred[1])

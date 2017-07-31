@@ -1,5 +1,5 @@
 
-var root_url = 'http://localhost:4200';
+var root_url = 'http://13.230.0.87:4200';
 
 
 $(document).ready(function () {
