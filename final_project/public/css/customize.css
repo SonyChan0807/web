@@ -87,73 +87,13 @@ label{
     color: gray
 }
 
-/*test table scroll*/
-table {
-        width: 100%;
-    }
-
-thead, tbody, tr, td, th { display: block; }
-
-tr:after {
-    content: ' ';
-    display: block;
-    visibility: hidden;
-    clear: both;
-}
-
-thead th {
-    height: auto;
-
-    text-align: left;
-}
-
-#item-table tbody {
-    height: 120px;
-    overflow-y: auto;
-    text-align: center;
-}
-
-thead {
-    /* fallback */
-}
-
-
-tbody td, thead th {
-    width: 16.6%;
-    float: left;
-    text-align: center;
-}
-.groupTable {
-    width:90%; margin:50px; font-size:20px; background:rgba(256,256,256,0.4);
-}
-.groupTable tr{
-    height:100px;
-}
-.groupTable tbody {
-    height: 600px;
-    overflow-y: auto;
-    text-align: center;
-}
-.groupTable tbody td, .groupTable thead th {
-    width: 12%;
-    float: left;
-}
-
 #brandButtons li{
     border:1px solid red;
 }
-
-#featureTable tbody td, #featureTable thead th {
-    width: 12%;
-    float: left;
-    text-align: center;
-    font-size: 12px;
-    height: 40px;
+#featureTable th, #featureTable tbody{
+    text-align: center
 }
-#featureTable table{
-    width: 100%;
-}
-
-#featureTable table{
-    width: 100%;
+#featureTable{
+    background-color: #ccc;
+    border: 1px solid #ddd 
 }

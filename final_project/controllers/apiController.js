@@ -83,7 +83,7 @@ exports.priceQueryButton = async(req, res) => {
     console.log(std);
     let depreRate = parseFloat(std.stdout.replace('/n', '').substr(4));
     let tagPrice = parseFloat(carInfo[0].tag_price);
-    let estPrice = (depreRate * tagPrice).toFixed(1);
+    let estPrice = (depreRate * tagPrice / 100).toFixed(1);
     sellingData.estPrice = estPrice;
 
 

@@ -9,13 +9,13 @@ var gDict = {
     '奢華頂級車': 'g6',
 }
 
-var root_url = 'http://localhost:4200';
 
 $(document).on('ready', function () {
     // alert(h);
     $('.groupSection').css('height', h);
 
     $('.groupTable').css('height', h - 100)
+    $('.groupTable tbody').css('height', h - 150)
 
     var rosePlot = echarts.init(document.getElementById('rose'));
     //get feature table
@@ -65,6 +65,17 @@ $(document).on('ready', function () {
         // location.href = ''+gDict[params.data.name]+''
 
     });
+
+    if ($('.back-to-top').length) {
+    // 
+    $('.back-to-top').on('click', function (e) {
+        e.preventDefault();
+        $('html,body').animate({
+            scrollTop: 0
+        }, 300);
+    });
+}
+
      $(window).on('resize', function () {
             console.log('resize!!');
             if (rosePlot != null && rosePlot != undefined) {

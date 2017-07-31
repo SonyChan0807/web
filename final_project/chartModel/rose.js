@@ -26,10 +26,10 @@ exports.option =  {
             // name:'面积模式',
             type:'pie',
             radius : ['25%', '100%'],
-            center : ['50%', '50%'],
+            center : ['50%', '55%'],
             roseType : 'area',
             label:{normal:{textStyle:{
-                fontSize:40,
+                fontSize:30,
                 fontWeight:'bold'
             }}},
            

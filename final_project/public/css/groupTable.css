@@ -1,0 +1,65 @@
+/* table scroll*/
+table{
+        width: 100%;
+        
+    }
+
+.groupTable thead, .groupTable tbody, .groupTable tr, .groupTable td, .groupTable th { display: block; }
+
+.groupTable tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.groupTable thead th {
+    height: 50px;
+
+    text-align: left;
+}
+
+.groupTable tbody {
+    height: 100px;
+    overflow-y: auto;
+    text-align: center;
+}
+.groupTable tbody td, .groupTable thead th {
+    width: 12%;
+    float: left;
+    text-align: center;
+}
+#g1,#g2,#g3,#g4,#g5,#g6{padding:3%}
+/*.groupTable {
+    width:100%; font-size:20px; background:rgba(256,256,256,0.4);
+}
+.groupTable thead, .groupTable tbody, .groupTable tr, .groupTable td, .groupTable th { display: block; }
+
+.groupTable tr:after {
+    content: ' ';
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+.groupTable thead th {
+    height: auto;
+
+    text-align: center;
+}
+
+.groupTable tbody {
+    height: 120px;
+    overflow-y: auto;
+    text-align: center;
+}
+
+
+.groupTable tr{
+    height:auto;
+}
+
+.groupTable tbody td, .groupTable thead th {
+    width: 12%;
+    float: left;
+}*/
