@@ -19,7 +19,7 @@ thead th {
 }
 
 tbody {
-    height: 120px;
+    height: 400px;
     overflow-y: auto;
     text-align: center;
 }

@@ -106,7 +106,7 @@ function showTables(tableData) {
 
 function showFeatures(featureData){
     
-    var nameArry = ['小型代步車', '平價家庭車', '高級家庭車','高速長程車', '綠色節能車', '奢華頂級車' ]
+    var nameArry = ['小型代步車', '平價家庭車','高速長程車','高級家庭車', '綠色節能車', '奢華頂級車' ]
     for(var i=0; i<featureData.length; i++){
         var index = 0;
         if(i === 2){
